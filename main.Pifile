@@ -2,10 +2,7 @@ FROM https://cdimage.ubuntu.com/releases/22.04.1/release/ubuntu-22.04.1-preinsta
 
 PUMP 10000M
 
-# RUN touch /boot/ssh
-RUN raspi-config nonint do_vnc 0
-RUN raspi-config nonint do_ssh 0
-RUN raspi-config nonint do_camera 0
+
 
 
 source .env
@@ -42,6 +39,12 @@ RUN apt-get update
 
 # Upgrade takes considerably more memory and time to build the image.
 # RUN apt-get upgrade -y
+RUN apt-get -y install raspi-config 
+
+# RUN touch /boot/ssh
+RUN raspi-config nonint do_vnc 0
+RUN raspi-config nonint do_ssh 0
+RUN raspi-config nonint do_camera 0
 
 ##################################
 
