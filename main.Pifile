@@ -1,4 +1,4 @@
-FROM https://downloads.raspberrypi.org/raspios_armhf/images/raspios_armhf-2022-04-07/2022-04-04-raspios-bullseye-armhf.img.xz
+FROM https://cdimage.ubuntu.com/releases/22.04.1/release/ubuntu-22.04.1-preinstalled-desktop-arm64+raspi.img.xz
 
 PUMP 10000M
 
@@ -10,7 +10,7 @@ RUN raspi-config nonint do_camera 0
 
 source .env
 
-hostname="${HOSTNAME:-mbot-test}"
+hostname="${HOSTNAME:-mbot}"
 user="${USER:-pi}"
 password="${USERPASSWORD:-iloverobots}"
 email="${EMAIL:-pgaskell@umich.edu}"

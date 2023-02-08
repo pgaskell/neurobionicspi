@@ -5,7 +5,7 @@ on:
     inputs:
       host_name:
         description: "Device"
-        default: neurobionics
+        default: mbot
         required: true
       user:
         description: "User"
@@ -14,14 +14,14 @@ on:
       password:
         description: "Password"
         required: true
-        default: neurobionics
+        default: i<3robots!
       mwireless_pass:
         description: "Get the MWireless Passphrase from: https://bit.ly/30zEzPCRPi"
         required: false
       email:
         description: "Email"
         required: true
-        default: ejrouse@umich.edu
+        default: <shortname>@umich.edu
       wifi_cc:
         description: "WiFi Country Code"
         required: true        
@@ -35,11 +35,11 @@ on:
       wpa_ssid:
         description: "Access Point SSID"
         required: true
-        default: NeurobionicsRPi
+        default: MBotAP
       wpa_passphrase:
         description: "Access Point Passphrase"
         required: true
-        default: neurobionics
+        default: iloverobots
 env:
   PIFILE: main
 

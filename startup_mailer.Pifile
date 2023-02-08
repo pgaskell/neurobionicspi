@@ -56,7 +56,7 @@ def compose_email(gmail_user, recipients, ipaddr, mac, token, today, hostname):
   <html>
       <body>
           <div style="padding:5px 20px;">
-              <h1 style="font-size:20px;">Wifi IP Address Emailer Utility v2.0 <br>&copy; University of Michigan Neurobionics Lab</h1>
+              <h1 style="font-size:20px;">Wifi IP Address Emailer Utility v2.0 <br>&copy; University of Michigan Robotics</h1>
               <p style="font-size:15px;">
               <b>Hostname:</b> {5} <br>
               <b>IP Address:</b> {0} <br>
